@@ -1,0 +1,115 @@
+
+/*Index*/
+
+    /*hero*/
+
+.hero{
+    background-color: var(--color-secundario);
+    background-image: url(../assets/img/placeholder.avif); /*que sea una imagen hotizontal minimo de 1200x600px y controlar enfoque con background-position*/
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+.hero-contenido{
+    background: linear-gradient(to top, rgba(0,0,0,0.7),transparent);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.hero-contenido h1 {
+  font-family: "Bree Serif", serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.hero-contenido p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  margin: 0;
+}
+
+.hero-btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.6rem 1.4rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 2rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: var(--color-primario);
+  border-color: var(--color-primario);
+}
+    /*hero*/
+
+    /*carrusel*/
+
+.carrusel-seccion {
+  padding: 2rem 2.5rem;
+}
+
+.carrusel-seccion h2 {
+  font-family: "Bree Serif", serif;
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
+  color: var(--color-acento);
+}
+
+.carrusel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.75rem;
+}
+
+.carrusel::-webkit-scrollbar { height: 4px; }
+.carrusel::-webkit-scrollbar-thumb { background: var(--color-secundario); border-radius: 2px; }
+
+.carrusel-tarjeta {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 220px;
+  padding: 1.25rem;
+  border: 1.5px solid var(--color-acento);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: background-color 0.2s;
+}
+
+.carrusel-tarjeta:hover {
+  background-color: var(--color-acento);
+}
+
+.carrusel-titulo {
+  font-family: "Bree Serif", serif;
+  font-size: 1.1rem;
+  color: var(--color-acento);
+}
+
+.carrusel-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.85rem;
+  color: inherit;
+}
+
+.carrusel-tarjeta:hover .carrusel-desc {
+  color: #ffffff;
+}

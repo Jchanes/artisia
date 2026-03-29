@@ -1,0 +1,32 @@
+.encabezado {
+  background: var(--color-primario);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+.logo{
+    width: 5vw;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+}
+
+.hero{
+    background-color: var(--color-secundario);
+    background-image: url(../assets/img/placeholder.avif);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+}

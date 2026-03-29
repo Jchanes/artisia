@@ -1,0 +1,42 @@
+.piedepagina {
+  background-color: var(--color-primario);
+  padding: 1.5rem 2.5rem;
+  margin-top: 3rem;
+}
+
+.piedepagina-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.piedepagina-marca {
+  font-family: var(--fuente-titulo);
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.piedepagina-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.piedepagina-links a {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+}
+
+.piedepagina-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.piedepagina-creditos {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.65);
+}

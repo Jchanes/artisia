@@ -1,0 +1,24 @@
+:root {
+    --color-primario: #A00008;
+  --color-secundario: #E97F20;
+  --color-acento: #15838E;
+  --color-complemento: #2ABF1A;
+}
+
+/*Fuentes: */
+@font-face {
+  font-family: "Bree Serif";
+  src: url("../assets/fonts/BreeSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
