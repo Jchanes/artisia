@@ -1,0 +1,178 @@
+/* ── ARTESANOS ── */
+.artesanos {
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.artesanos h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+  color: var(--color-primario);
+  margin: 0;
+}
+
+.artesanos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.artesano-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-acento);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.artesano-card:hover {
+  transform: translateY(-4px);
+}
+
+.artesano-foto {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background-color: var(--color-secundario);
+}
+
+.artesano-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.artesano-nombre {
+  font-family: var(--fuente-titulo);
+  font-size: 1.1rem;
+  color: var(--color-primario);
+}
+
+.artesano-oficio {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.artesano-region {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.artesano-cita {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #444;
+  border-left: 3px solid var(--color-acento);
+  margin: 0.75rem 0;
+  padding-left: 0.75rem;
+  line-height: 1.5;
+}
+
+.artesano-btn {
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.45rem 1rem;
+  width: fit-content;
+  border: 1.5px solid var(--color-acento);
+  border-radius: 2rem;
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.8rem;
+  color: var(--color-acento);
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.artesano-btn:hover {
+  background-color: var(--color-acento);
+  color: #ffffff;
+}
+
+.btn-secundario {
+  align-self: center;
+  padding: 0.6rem 1.8rem;
+  border: 1.5px solid var(--color-primario);
+  border-radius: 2rem;
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.9rem;
+  color: var(--color-primario);
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secundario:hover {
+  background-color: var(--color-primario);
+  color: #ffffff;
+}
+
+/* ── MEDIA (video y mapa) ── */
+.media-seccion {
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.media-seccion h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 1.4rem;
+  color: var(--color-primario);
+  margin: 0;
+}
+
+.media-desc {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* truco responsive para iframes */
+.video-wrapper,
+.mapa-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.video-wrapper iframe,
+.mapa-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .artesanos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .artesanos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .artesano-foto {
+    height: 220px;
+  }
+}

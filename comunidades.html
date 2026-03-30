@@ -2,12 +2,153 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title>Document</title>
+    <title>Comunidades</title>
+        <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/comunidades.css" rel="stylesheet"/>
+    <link href="css/encabezado.css" rel="stylesheet"/>
+    <link href="css/piedepagina.css" rel="stylesheet"/>
+    
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    
+    <header class="encabezado">
+      <img class="logo" alt="Logo de artisia" src="assets/img/placeholder.png" />
+      <ul>
+	<li><a href="index.html">Inicio</a></li>
+	<li><a href="coleccion.html">Coleccion</a></li>
+	<li><a href="comunidades.html" class="activo">Comunidades</a></li>
+	<li><a href="global.html">Global</a></li>
+	<li><a href="recursos.html">Recursos</a></li>
+	<li><a href="aboutUs.html">Conocenos</a></li>
+      </ul>
+    </header>
+    
+    <main>
+      
+      <!-- BANNER -->
+      <section class="banner-seccion">
+        <h1>Comunidades</h1>
+        <p>Las manos detrás del arte mexicano</p>
+      </section>
+
+      <!-- ARTESANOS DESTACADOS -->
+      <section class="artesanos">
+        <h2>Artesanos destacados</h2>
+        <div class="artesanos-grid">
+
+          <div class="artesano-card">
+            <img
+              class="artesano-foto"
+              src="assets/img/artesano1.jpg"
+              alt="Carlota Morales, alebrijera de Oaxaca"/>
+            <div class="artesano-info">
+              <span class="artesano-nombre">Carlota Morales</span>
+              <span class="artesano-oficio">Alebrijera</span>
+              <span class="artesano-region">Oaxaca</span>
+              <blockquote class="artesano-cita">
+                "El copal tiene alma propia, solo hay que escucharlo."
+              </blockquote>
+              <a class="artesano-btn" href="comunidades.html#carlota">
+                Ver historia →
+              </a>
+            </div>
+          </div>
+
+          <div class="artesano-card">
+            <img
+              class="artesano-foto"
+              src="assets/img/artesano2.jpg"
+              alt="María Jiménez, tejedora de Chiapas"/>
+            <div class="artesano-info">
+              <span class="artesano-nombre">María Jiménez</span>
+              <span class="artesano-oficio">Tejedora</span>
+              <span class="artesano-region">Chiapas</span>
+              <blockquote class="artesano-cita">
+                "Cada hilo que pongo es una historia de mi familia."
+              </blockquote>
+              <a class="artesano-btn" href="comunidades.html#maria">
+                Ver historia →
+              </a>
+            </div>
+          </div>
+
+          <div class="artesano-card">
+            <img
+              class="artesano-foto"
+              src="assets/img/artesano3.jpg"
+              alt="Juan Pérez, ceramista de Puebla"/>
+            <div class="artesano-info">
+              <span class="artesano-nombre">Juan Pérez</span>
+              <span class="artesano-oficio">Ceramista</span>
+              <span class="artesano-region">Puebla</span>
+              <blockquote class="artesano-cita">
+                "El barro habla cuando lo tocas con respeto."
+              </blockquote>
+              <a class="artesano-btn" href="comunidades.html#juan">
+                Ver historia →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="btn-secundario" href="comunidades.html">
+          Ver todos los artesanos →
+        </a>
+
+      </section>
+
+      <!-- VIDEO -->
+      <section class="media-seccion">
+        <h2>El proceso artesanal</h2>
+        <p class="media-desc">
+          Conoce de cerca cómo se crean estas piezas únicas,
+          de la mano de quienes han heredado estas técnicas por generaciones.
+        </p>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Proceso artesanal mexicano"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write;
+                   encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <!-- MAPA -->
+      <section class="media-seccion">
+        <h2>Comunidades en el mapa</h2>
+        <p class="media-desc">
+          Las artesanías mexicanas nacen en comunidades específicas,
+          cada una con su propia tradición y geografía.
+        </p>
+        <div class="mapa-wrapper">
+          <iframe
+            src="https://maps.google.com/maps?q=Oaxaca,Mexico&output=embed"
+            title="Mapa de comunidades artesanas"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    
+    <footer class="piedepagina">
+      <div class="piedepagina-contenido">
+	<span class="piedepagina-marca">Artisía</span>
+	<nav class="piedepagina-links">
+	  <a href="index.html">Inicio</a>
+	  <a href="coleccion.html">Colección</a>
+	  <a href="comunidades.html">Comunidades</a>
+	  <a href="aboutUs.html">Conócenos</a>
+	</nav>
+	<span class="piedepagina-creditos">Proyecto escolar · 2026</span>
+      </div>
+    </footer>
 
     
   </body>

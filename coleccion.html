@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Coleccion</title>
-        <link href="css/style.css" rel="stylesheet"/>
-	<link href="css/coleccion.css" rel="stylesheet"/>
-	<link href="css/encabezado.css" rel="stylesheet"/>
-	<link href="css/piedepagina.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/coleccion.css" rel="stylesheet"/>
+    <link href="css/encabezado.css" rel="stylesheet"/>
+    <link href="css/piedepagina.css" rel="stylesheet"/>
   </head>
   
   <body>
@@ -24,15 +24,114 @@
     </header>
     
     <main>
-      <div>
-	<h1 class="d-flex justify-content-center">Coleccion</h1>
-	<p class="d-flex p-2">Mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas accumsan, lacus vel facilisis volutpat, est velit egestas dui, id ornare arcu? Mi sit amet mauris commodo.</p>
-      </div>
 
+      <section class="banner-seccion">
+        <h1>Colecciones</h1>
+        <p>Artesanías mexicanas documentadas por técnica, material y región</p>
+      </section>
+
+      <section class="colecciones-destacadas">
+        <h2>Destacadas</h2>
+        <div class="grid-destacadas">
+
+          <a class="card-destacada" href="#alebrijes"
+             style="background-image: url('assets/img/alebrijes.jpg')">
+            <div class="card-overlay">
+              <span class="card-titulo">Alebrijes</span>
+              <span class="card-sub">Oaxaca · fantástico · madera pintada</span>
+            </div>
+          </a>
+
+          <a class="card-destacada" href="#ceramica"
+             style="background-image: url('assets/img/ceramica.jpg')">
+            <div class="card-overlay">
+              <span class="card-titulo">Cerámica</span>
+              <span class="card-sub">Talavera · barro negro · Puebla</span>
+            </div>
+          </a>
+
+          <a class="card-destacada" href="#textiles"
+             style="background-image: url('assets/img/textiles.jpg')">
+            <div class="card-overlay">
+              <span class="card-titulo">Textiles</span>
+              <span class="card-sub">Huipil · rebozo · bordado</span>
+            </div>
+          </a>
+
+          <a class="card-destacada" href="#mascaras"
+             style="background-image: url('assets/img/mascaras.jpg')">
+            <div class="card-overlay">
+              <span class="card-titulo">Máscaras</span>
+              <span class="card-sub">Madera · danza · región</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="colecciones-otras">
+        <h2>Otras tradiciones</h2>
+        <div class="grid-otras">
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Joyería</span>
+            <span class="card-otra-sub">Taxco · filigrana · plata</span>
+          </a>
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Cestería</span>
+            <span class="card-otra-sub">Palma · mimbre · Oaxaca</span>
+          </a>
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Vidrio soplado</span>
+            <span class="card-otra-sub">Jalisco · Tonalá</span>
+          </a>
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Laca y maque</span>
+            <span class="card-otra-sub">Olinalá · Michoacán</span>
+          </a>
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Papel amate</span>
+            <span class="card-otra-sub">Puebla · Guerrero</span>
+          </a>
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Metalistería</span>
+            <span class="card-otra-sub">Cobre · Santa Clara del Cobre</span>
+          </a>
+
+        </div>
+
+        <!-- sección extra oculta -->
+        <div class="grid-otras grid-extra" id="coleccionesExtra">
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Cartonería</span>
+            <span class="card-otra-sub">CDMX · piñatas · judas</span>
+          </a>
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Piedra tallada</span>
+            <span class="card-otra-sub">Ónix · cantera · Puebla</span>
+          </a>
+
+          <a class="card-otra" href="#">
+            <span class="card-otra-titulo">Arte huichol</span>
+            <span class="card-otra-sub">Wixárika · chaquira · yarn</span>
+          </a>
+	  
+        </div>
+
+        <button class="btn-ver-mas" id="verMas">Ver más ↓</button>
+      </section>
       
     </main>
 
     <footer class="piedepagina"></footer>
-    
+
+    <script src="js/script.js"></script>
   </body>
 </html>
