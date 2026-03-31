@@ -16,20 +16,27 @@
   font-weight: 700;
 }
 
-/*Variables: */
+/*root*/
 :root {
+    /*Variables: */
     --color-primario: #A00008;
     --color-secundario: #E97F20;
     --color-acento: #15838E;
     --color-complemento: #2ABF1A;
     --fuente-titulo: "Bree-Serif", serif;
     --fuente-cuerpo: "Open Sans", sans-serif;
+
+
 }
 
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url("../assets/img/31003650_7756902.svg");
+    background-repeat: no-repeat;
+    background-size: 710rem;
+
 }
 
 main{

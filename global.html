@@ -3,10 +3,157 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Global</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/global.css" rel="stylesheet"/>
+    <link href="css/encabezado.css" rel="stylesheet"/>
+    <link href="css/piedepagina.css" rel="stylesheet"/>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+    <header class="encabezado">
+      <img class="logo" alt="Logo de artisia" src="assets/img/placeholder.png" />
+      <ul>
+	<li><a href="index.html">Inicio</a></li>
+	<li><a href="coleccion.html">Coleccion</a></li>
+	<li><a href="comunidades.html">Comunidades</a></li>
+	<li><a href="global.html"  class="activo" >Global</a></li>
+	<li><a href="recursos.html">Recursos</a></li>
+	<li><a href="aboutUs.html">Conocenos</a></li>
+      </ul>
+    </header>
+
+    <main>
+
+      <!-- BANNER -->
+      <section class="banner-seccion banner-secundario">
+        <h1>Artesanía Global</h1>
+        <p>México no es el único — el mundo también teje, talla y moldea</p>
+      </section>
+
+      <!-- MAPA -->
+      <section class="global-mapa-seccion">
+        <h2>Explora el mapa</h2>
+        <p class="media-desc">
+          Haz clic en una cultura para ver su ubicación en el mapa.
+        </p>
+        <div class="mapa-wrapper">
+          <iframe
+            id="mapa-global"
+            src="https://maps.google.com/maps?q=Kyoto,Japon&output=embed"
+            title="Mapa de culturas artesanales del mundo"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <!-- GRID CULTURAS -->
+      <section class="culturas-seccion">
+        <h2>Culturas artesanales del mundo</h2>
+        <p class="media-desc">
+          Cada tradición nace de un lugar, un material y una historia distinta.
+        </p>
+
+        <div class="culturas-grid">
+
+          <div class="cultura-card activa" data-lugar="Kyoto, Japan">
+            <img
+              class="cultura-img"
+              src="assets/img/japon.jpg"
+              alt="Cerámica Raku de Japón"/>
+            <div class="cultura-info">
+              <span class="cultura-pais">Japón</span>
+              <span class="cultura-tipo">Cerámica Raku</span>
+              <span class="cultura-region">Kyoto · tradición zen</span>
+            </div>
+          </div>
+
+          <div class="cultura-card" data-lugar="Rajasthan, India">
+            <img
+              class="cultura-img"
+              src="assets/img/india.jpg"
+              alt="Textiles Sari de India"/>
+            <div class="cultura-info">
+              <span class="cultura-pais">India</span>
+              <span class="cultura-tipo">Textiles Sari</span>
+              <span class="cultura-region">Rajastán · bordado</span>
+            </div>
+          </div>
+
+          <div class="cultura-card" data-lugar="Fez, Morocco">
+            <img
+              class="cultura-img"
+              src="assets/img/marruecos.jpg"
+              alt="Cerámica Zellige de Marruecos"/>
+            <div class="cultura-info">
+              <span class="cultura-pais">Marruecos</span>
+              <span class="cultura-tipo">Cerámica Zellige</span>
+              <span class="cultura-region">Fez · mosaico árabe</span>
+            </div>
+          </div>
+
+          <div class="cultura-card" data-lugar="Cusco, Peru">
+            <img
+              class="cultura-img"
+              src="assets/img/peru.jpg"
+              alt="Textiles andinos de Perú"/>
+            <div class="cultura-info">
+              <span class="cultura-pais">Perú</span>
+              <span class="cultura-tipo">Textiles andinos</span>
+              <span class="cultura-region">Cusco · cultura quechua</span>
+            </div>
+          </div>
+
+          <div class="cultura-card" data-lugar="Lagos, Nigeria">
+            <img
+              class="cultura-img"
+              src="assets/img/nigeria.jpg"
+              alt="Telas Kente de Nigeria"/>
+            <div class="cultura-info">
+              <span class="cultura-pais">Nigeria</span>
+              <span class="cultura-tipo">Telas Kente</span>
+              <span class="cultura-region">Lagos · tradición yoruba</span>
+            </div>
+          </div>
+
+          <div class="cultura-card" data-lugar="Istanbul, Turkey">
+            <img
+              class="cultura-img"
+              src="assets/img/turquia.jpg"
+              alt="Alfombras de Turquía"/>
+            <div class="cultura-info">
+              <span class="cultura-pais">Turquía</span>
+              <span class="cultura-tipo">Alfombras Iznik</span>
+              <span class="cultura-region">Estambul · lana y seda</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TARJETA SUGERENCIA -->
+      <section class="sugerencia-seccion">
+        <div class="sugerencia-card">
+          <div class="sugerencia-texto">
+            <h2>¿Tu país no aparece?</h2>
+            <p>
+              Si conoces una tradición artesanal que merece estar aquí,
+              compártenos lo que tienes y lo agregamos al archivo mundial.
+            </p>
+          </div>
+          <a class="sugerencia-btn"
+             href="mailto:artisia@proyecto.com?subject=Sugerencia de cultura artesanal">
+            Escríbenos →
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    
+    <footer class="piedepagina"></footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
